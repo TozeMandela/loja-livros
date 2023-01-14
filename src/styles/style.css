@@ -309,6 +309,9 @@ form label{
     .livros .container aside {
         flex-wrap: wrap;
     }
+    .livros div aside article {
+        margin: 10px;
+    }
     .rodape {
         height: auto;
     }
@@ -347,7 +350,7 @@ form label{
     }
     .hello .conteudo{
         max-width: 760px;
-        padding-left: 50px;
+        padding-left: 0px;
         display: flex;
         flex-direction: column; 
         align-self: center;
@@ -368,6 +371,9 @@ form label{
     }
     p {
         text-align: justify;
+    }
+    .livros div aside article {
+        margin: 0px;
     }
     .rodape {
         height: auto;
