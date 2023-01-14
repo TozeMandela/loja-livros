@@ -207,9 +207,24 @@ form label{
 }
 .rodape div div.info {
     display: flex;
+    flex-wrap: wrap;
 }
 .rodape div div.info div{
     padding-right: 15px;
+    width: 25%;
+}
+.rodape form input[type="text"],.rodape form input[type="email"] {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+}
+.rodape form button{
+    width: 100%;
+    background-color: var(--text-color1);
+}
+.rodape form ::placeholder {
+    color: var(--text-color1);
+    padding: 5px;
 }
 .rodape h5{
     font-weight: 400;
@@ -294,6 +309,14 @@ form label{
     .livros .container aside {
         flex-wrap: wrap;
     }
+    .rodape {
+        height: auto;
+    }
+    .rodape div div.info div{
+        padding-right: 15px;
+        width: 50%;
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 769px) {
@@ -335,5 +358,22 @@ form label{
         border-radius: 10px;
         overflow: hidden;
         box-shadow: 1px 1px 1px;
+    }
+    .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+         width: 100%; 
+         padding-right: none; 
+        padding-left: none; 
+        margin-right: none; 
+        margin-left: none;
+    }
+    p {
+        text-align: justify;
+    }
+    .rodape {
+        height: auto;
+    }
+    .rodape div div.info div{
+        padding-right: 15px;
+        width: 100%;
     }
 }

@@ -4,7 +4,6 @@
    hamburguer.addEventListener('click', (evt) => {
     let classe = doc.querySelector('.cabecalho').className.split(' ');
     let divs = doc.querySelectorAll('.hamburguer div');
-    console.log(divs)
     if (classe.indexOf('extends') == -1) {
         doc.querySelector('.cabecalho').classList.add('extends');
         divs[0].classList.add('first');
@@ -18,4 +17,5 @@
         divs[2].classList.remove('last');
     }
 });
+
 })(window, document);
