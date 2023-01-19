@@ -231,6 +231,10 @@ form label{
     font-size: 14px;
     text-transform: uppercase;
 }
+.rodape .REDES-SOCIAIS p i{
+    font-size: 200%;
+    margin-left: 10px;
+}
 
 @media (max-width: 991px){
     .extends {
